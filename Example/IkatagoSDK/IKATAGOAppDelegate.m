@@ -9,6 +9,10 @@
 #import "IKATAGOAppDelegate.h"
 #import <ikatagosdk/ikatagosdk.h>
 
+#define IKATAGO_PLATFORM @"aistudio"
+#define IKATAGO_USERNAME @"kinfkong"
+#define IKATAGO_PASSWORD @"12345678"
+
 @interface IKATAGODataCallback : NSObject <IkatagosdkDataCallback>
 
 @end
@@ -23,8 +27,6 @@
 
 @end
 
-
-
 @implementation IKATAGOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -33,7 +35,7 @@
     dispatch_queue_t katagoCmdQueue = dispatch_queue_create("katago.cmdQueue", DISPATCH_QUEUE_SERIAL);
     
     // Override point for customization after application launch.
-    IkatagosdkClient* client = [[IkatagosdkClient alloc] init:@"" platform:@"aistudio" username:@"wce" password:@"12345678"];
+    IkatagosdkClient* client = [[IkatagosdkClient alloc] init:@"" platform:IKATAGO_PLATFORM username:IKATAGO_USERNAME password:IKATAGO_PASSWORD];
     __block IkatagosdkKatagoRunner* katago = nil;
     IKATAGODataCallback* callback = [[IKATAGODataCallback alloc] init];
     dispatch_async(katagoRunQueue, ^{
