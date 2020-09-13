@@ -26,6 +26,8 @@ View the example for detail, in the `Example/IkatagoSDK/IKATAGOAppDelegate.m`
 
 ### 1. Creates a ikatago client and query the server info
 ```objective-c
+    #import <ikatagosdk/ikatagosdk.h>
+
     IkatagosdkClient* client = [[IkatagosdkClient alloc] init:@"" platform:@"aistudio" username:@"kinfkong" password:@"12345678"];
     // query the server to see what weights, configs this server supports
     NSString* serverInfo = [client queryServer:&error];
@@ -38,7 +40,7 @@ View the example for detail, in the `Example/IkatagoSDK/IKATAGOAppDelegate.m`
 ```
 Example of the json response of the server info: 
 ```json
-{"serverVersion":"1.3.1","supportKataWeights":[{"name":"20b","description":null},{"name":"30b","description":null},{"name":"40b","description":null},{"name":"40b-large","description":null}],"supportKataNames":[{"name":"katago-1.5.0","description":null},{"name":"katago-1.6.0","description":null},{"name":"katago-1.3.4","description":null},{"name":"katago-solve","description":null}],"supportKataConfigs":[{"name":"default_gtp","description":null},{"name":"10spermove","description":null},{"name":"2stones_handicap","description":null},{"name":"3stones_handicap","description":null},{"name":"4stones_handicap","description":null},{"name":"5stones_handicap","description":null},{"name":"6stones_handicap","description":null},{"name":"7+stones_handicap","description":null}],"defaultKataName":"katago-1.6.0","defaultKataWeight":"40b","defaultKataConfig":"default_gtp"}
+{"serverVersion":"1.4.0","supportKataWeights":[{"name":"20b","description":null},{"name":"30b","description":null},{"name":"40b","description":null},{"name":"40b-large","description":null}],"supportKataNames":[{"name":"katago-1.5.0","description":null},{"name":"katago-1.6.0","description":null},{"name":"katago-1.3.4","description":null},{"name":"katago-solve","description":null}],"supportKataConfigs":[{"name":"default_gtp","description":null},{"name":"10spermove","description":null},{"name":"2stones_handicap","description":null},{"name":"3stones_handicap","description":null},{"name":"4stones_handicap","description":null},{"name":"5stones_handicap","description":null},{"name":"6stones_handicap","description":null},{"name":"7+stones_handicap","description":null}],"defaultKataName":"katago-1.6.0","defaultKataWeight":"40b","defaultKataConfig":"default_gtp"}
 ```
 ** Note: `queryServer` api only supports the ikatago-server since 1.4.0 **
 
