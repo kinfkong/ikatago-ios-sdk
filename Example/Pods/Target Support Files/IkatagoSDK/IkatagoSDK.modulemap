@@ -1,0 +1,6 @@
+framework module IkatagoSDK {
+  umbrella header "IkatagoSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

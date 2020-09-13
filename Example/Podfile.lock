@@ -1,0 +1,16 @@
+PODS:
+  - IkatagoSDK (0.1.0)
+
+DEPENDENCIES:
+  - IkatagoSDK (from `../`)
+
+EXTERNAL SOURCES:
+  IkatagoSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IkatagoSDK: 823ca59c3a5bbf5370fc532989b0cf0b2cc09c1f
+
+PODFILE CHECKSUM: 4e7baf2af795876b6d1da00c3a3f915cac0df650
+
+COCOAPODS: 1.9.1

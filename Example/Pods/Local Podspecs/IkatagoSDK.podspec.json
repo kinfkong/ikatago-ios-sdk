@@ -1,0 +1,26 @@
+{
+  "name": "IkatagoSDK",
+  "version": "0.1.0",
+  "summary": "IkatagoSDK for ios.",
+  "description": "IkatagoSDK for ios.",
+  "homepage": "https://github.com/kinfkong/ikatago-ios-sdk",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kinfkong": "kinfkong@126.com"
+  },
+  "source": {
+    "git": "https://github.com/kinfkong/ikatago-ios-sdk.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "vendored_frameworks": "ikatagosdk.framework",
+  "preserve_paths": "ikatagosdk.framework",
+  "user_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  }
+}
