@@ -40,6 +40,7 @@ Example of the json response of the server info:
 ```json
 {"serverVersion":"1.3.1","supportKataWeights":[{"name":"20b","description":null},{"name":"30b","description":null},{"name":"40b","description":null},{"name":"40b-large","description":null}],"supportKataNames":[{"name":"katago-1.5.0","description":null},{"name":"katago-1.6.0","description":null},{"name":"katago-1.3.4","description":null},{"name":"katago-solve","description":null}],"supportKataConfigs":[{"name":"default_gtp","description":null},{"name":"10spermove","description":null},{"name":"2stones_handicap","description":null},{"name":"3stones_handicap","description":null},{"name":"4stones_handicap","description":null},{"name":"5stones_handicap","description":null},{"name":"6stones_handicap","description":null},{"name":"7+stones_handicap","description":null}],"defaultKataName":"katago-1.6.0","defaultKataWeight":"40b","defaultKataConfig":"default_gtp"}
 ```
+** Note: `queryServer` api only supports the ikatago-server since 1.4.0 **
 
 ### 2. Configs the katago (weights, configs, etc.) and run the katago
 ```objective-c
