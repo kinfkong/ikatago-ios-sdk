@@ -79,11 +79,17 @@ Example of the json response of the server info:
 @end
 
 @implementation IKATAGODataCallback
-- (void)callback:(NSData* _Nullable)content {
+- (void)callback:(NSData* )content {
     // simply output the data
     NSString* contentString = [[NSString alloc] initWithData:content encoding:NSASCIIStringEncoding];
     NSLog(@"%@", contentString);
 }
+- (void) stderrCallback:(NSData *)content {
+    // simply output the data
+    NSString* contentString = [[NSString alloc] initWithData:content encoding:NSASCIIStringEncoding];
+    NSLog(@"stderr: %@", contentString);
+}
+@end
 @end
 ```
 ## Author

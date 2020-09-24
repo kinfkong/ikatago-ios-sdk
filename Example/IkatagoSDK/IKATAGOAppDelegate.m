@@ -10,7 +10,7 @@
 #import <ikatagosdk/ikatagosdk.h>
 
 #define IKATAGO_PLATFORM @"aistudio"
-#define IKATAGO_USERNAME @"kinfkong"
+#define IKATAGO_USERNAME @"wce"
 #define IKATAGO_PASSWORD @"12345678"
 
 @interface IKATAGODataCallback : NSObject <IkatagosdkDataCallback>
@@ -19,12 +19,16 @@
 
 @implementation IKATAGODataCallback
 
-- (void)callback:(NSData* _Nullable)content {
+- (void)callback:(NSData* )content {
     // simply output the data
     NSString* contentString = [[NSString alloc] initWithData:content encoding:NSASCIIStringEncoding];
     NSLog(@"%@", contentString);
 }
-
+- (void) stderrCallback:(NSData *)content {
+    // simply output the data
+    NSString* contentString = [[NSString alloc] initWithData:content encoding:NSASCIIStringEncoding];
+    NSLog(@"stderr: %@", contentString);
+}
 @end
 
 @implementation IKATAGOAppDelegate
@@ -83,7 +87,19 @@
             break;
         }
     });
-    
+    dispatch_async(katagoCmdQueue, ^{
+        NSError* error = nil;
+        while (true) {
+            if (katago == nil) {
+                // wait
+                [NSThread sleepForTimeInterval:1.0f];
+                continue;
+            }
+            [NSThread sleepForTimeInterval:15.0f];
+            [katago stop:&error];
+            break;
+        }
+    });
     return YES;
 }
 

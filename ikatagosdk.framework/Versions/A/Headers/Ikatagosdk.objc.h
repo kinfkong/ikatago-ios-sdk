@@ -18,6 +18,7 @@
 
 @protocol IkatagosdkDataCallback <NSObject>
 - (void)callback:(NSData* _Nullable)content;
+- (void)stderrCallback:(NSData* _Nullable)content;
 @end
 
 /**
@@ -84,9 +85,13 @@
  */
 - (void)setRefreshInterval:(long)refreshInterval;
 /**
- * SetTransmitMoveNum sets the refresh interval
+ * SetTransmitMoveNum sets the transmit move num
  */
 - (void)setTransmitMoveNum:(long)transmitMoveNum;
+/**
+ * Stop stops the katago engine
+ */
+- (BOOL)stop:(NSError* _Nullable* _Nullable)error;
 @end
 
 /**
@@ -105,6 +110,7 @@ FOUNDATION_EXPORT IkatagosdkClient* _Nullable IkatagosdkNewClient(NSString* _Nul
 
 - (nonnull instancetype)initWithRef:(_Nonnull id)ref;
 - (void)callback:(NSData* _Nullable)content;
+- (void)stderrCallback:(NSData* _Nullable)content;
 @end
 
 #endif
