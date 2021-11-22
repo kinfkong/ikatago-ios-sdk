@@ -18,6 +18,7 @@
 
 @protocol IkatagosdkDataCallback <NSObject>
 - (void)callback:(NSData* _Nullable)content;
+- (void)onReady;
 - (void)stderrCallback:(NSData* _Nullable)content;
 @end
 
@@ -41,6 +42,7 @@
  * QueryServer queries the server info
  */
 - (NSString* _Nonnull)queryServer:(NSError* _Nullable* _Nullable)error;
+- (void)setEngineType:(NSString* _Nullable)engineType;
 @end
 
 /**
@@ -65,6 +67,10 @@
  */
 - (BOOL)sendGTPCommand:(NSString* _Nullable)command error:(NSError* _Nullable* _Nullable)error;
 /**
+ * SetEngineType sets the engineType. for example: 'katago', 'gomoku'
+ */
+- (void)setEngineType:(NSString* _Nullable)engineType;
+/**
  * SetKataConfig sets the name of the kata config name
  */
 - (void)setKataConfig:(NSString* _Nullable)kataConfig;
@@ -77,6 +83,10 @@
  */
 - (void)setKataName:(NSString* _Nullable)kataName;
 /**
+ * SetKataOverrideConfig sets the name of the kata override-config option of kata, example: analysisPVLen=30,playoutDoublingAdvantage=3
+ */
+- (void)setKataOverrideConfig:(NSString* _Nullable)kataOverrideConfig;
+/**
  * SetKataWeight sets the name of the kata weight
  */
 - (void)setKataWeight:(NSString* _Nullable)kataWeight;
@@ -85,9 +95,17 @@
  */
 - (void)setRefreshInterval:(long)refreshInterval;
 /**
+ * SetSubCommands sets the subcommands. for example: 'analysis -analysis-threads 12'
+ */
+- (void)setSubCommands:(NSString* _Nullable)subCommands;
+/**
  * SetTransmitMoveNum sets the transmit move num
  */
 - (void)setTransmitMoveNum:(long)transmitMoveNum;
+/**
+ * SetUseRawData sets if use the raw data or not
+ */
+- (void)setUseRawData:(BOOL)useRawData;
 /**
  * Stop stops the katago engine
  */
@@ -110,6 +128,7 @@ FOUNDATION_EXPORT IkatagosdkClient* _Nullable IkatagosdkNewClient(NSString* _Nul
 
 - (nonnull instancetype)initWithRef:(_Nonnull id)ref;
 - (void)callback:(NSData* _Nullable)content;
+- (void)onReady;
 - (void)stderrCallback:(NSData* _Nullable)content;
 @end
 
