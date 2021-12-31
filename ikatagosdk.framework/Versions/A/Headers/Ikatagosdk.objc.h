@@ -71,6 +71,10 @@
  */
 - (void)setEngineType:(NSString* _Nullable)engineType;
 /**
+ * SetGpuType sets the transmit move num
+ */
+- (void)setGpuType:(NSString* _Nullable)gpuType;
+/**
  * SetKataConfig sets the name of the kata config name
  */
 - (void)setKataConfig:(NSString* _Nullable)kataConfig;
@@ -98,6 +102,10 @@
  * SetSubCommands sets the subcommands. for example: 'analysis -analysis-threads 12'
  */
 - (void)setSubCommands:(NSString* _Nullable)subCommands;
+/**
+ * SetToken sets the token
+ */
+- (void)setToken:(NSString* _Nullable)token;
 /**
  * SetTransmitMoveNum sets the transmit move num
  */
