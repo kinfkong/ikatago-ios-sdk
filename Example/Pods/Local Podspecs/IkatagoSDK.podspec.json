@@ -18,8 +18,8 @@
   "platforms": {
     "ios": "8.0"
   },
-  "vendored_frameworks": "ikatagosdk.framework",
-  "preserve_paths": "ikatagosdk.framework",
+  "vendored_frameworks": "ikatagosdk.xcframework",
+  "preserve_paths": "ikatagosdk.xcframework",
   "user_target_xcconfig": {
     "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
   }

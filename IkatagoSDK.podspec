@@ -31,8 +31,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   # s.source_files = 'IkatagoSDK/Classes/**/*'
-  s.vendored_frameworks = 'ikatagosdk.framework'
-  s.preserve_paths      = 'ikatagosdk.framework'
+  s.vendored_frameworks = 'ikatagosdk.xcframework'
+  s.preserve_paths      = 'ikatagosdk.xcframework'
   
   s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 

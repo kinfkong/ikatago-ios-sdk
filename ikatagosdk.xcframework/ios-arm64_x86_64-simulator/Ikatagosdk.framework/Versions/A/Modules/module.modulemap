@@ -1,0 +1,8 @@
+framework module "Ikatagosdk" {
+	header "ref.h"
+    header "Ikatagosdk.objc.h"
+    header "Universe.objc.h"
+    header "Ikatagosdk.h"
+
+    export *
+}

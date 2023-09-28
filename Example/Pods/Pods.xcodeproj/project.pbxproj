@@ -9,8 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		C0AE974BD5AA3A3F970DEAD1B8CCC29C /* IkatagoSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 7E5FEAE07972A1297C2C9525DEE666A8 /* Build configuration list for PBXAggregateTarget "IkatagoSDK" */;
+			buildConfigurationList = 57C67E1B2DFC5672E529EDC8ADA53F8B /* Build configuration list for PBXAggregateTarget "IkatagoSDK" */;
 			buildPhases = (
+				BCBDB5ED2D32237377D5634BCDFEC2AA /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -19,13 +20,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		1CB7F3AFACA485A72BF10839E75EA2EB /* Pods-IkatagoSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA717F69F6A71EBEAF1DCFCC06B2AB8E /* Pods-IkatagoSDK_Example-dummy.m */; };
-		6CFFBB81DC3A07987BF657BEFE01DC05 /* Pods-IkatagoSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC9EA482CF8F276E482B8F755CBE4DFE /* Pods-IkatagoSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F2881251EB719C0C9CDC1FE6BC62304 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		02586DEF70380E8B5010B6C02E4796D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1ABE6A3DB09E1AFCC5AC8B9CE3B977BA /* Pods-IkatagoSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA717F69F6A71EBEAF1DCFCC06B2AB8E /* Pods-IkatagoSDK_Example-dummy.m */; };
+		6FB57DB9E641D49D981BFB8E3C431978 /* Pods-IkatagoSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC9EA482CF8F276E482B8F755CBE4DFE /* Pods-IkatagoSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		341EC490E906209CE5C4D775432CFB5E /* PBXContainerItemProxy */ = {
+		281074C2D214B48F7E6471C3DC28BE79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,37 +36,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001A883FD3223175D28E88975355E91D /* ikatagosdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ikatagosdk.framework; sourceTree = "<group>"; };
-		13A772E9130B1BF08DE8EFBF70FF4C4D /* IkatagoSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IkatagoSDK.release.xcconfig; sourceTree = "<group>"; };
-		259F89B0B44C81056AD46EF74F162443 /* IkatagoSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IkatagoSDK.debug.xcconfig; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		200F47F2396B9E88B4B0C5A71384DC4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		24D9E879DDBAAC0894CA619F0186A2D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		39A87D8635AD65F0EB01CE2E843BFA63 /* Pods-IkatagoSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IkatagoSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4A3F526E08717D6AAE28D5CC24E8FEE6 /* Pods-IkatagoSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IkatagoSDK_Example.modulemap"; sourceTree = "<group>"; };
-		511E23526DDAC07F1B858B984133EBFC /* Pods_IkatagoSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IkatagoSDK_Example.framework; path = "Pods-IkatagoSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		511E23526DDAC07F1B858B984133EBFC /* Pods-IkatagoSDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-IkatagoSDK_Example"; path = Pods_IkatagoSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6DE2513D55B3883BD0F4A92D1A2899 /* ikatagosdk.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = ikatagosdk.xcframework; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		795E731CE9D7C3B290FE86A82C42C51A /* Pods-IkatagoSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IkatagoSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7B159D7267DCF51D711C70331B0A1707 /* Pods-IkatagoSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IkatagoSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		905F6B619E6B6F8CC3E0846E7CEC9407 /* Pods-IkatagoSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IkatagoSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B98AF5C3337404A57CADD4C03386EE64 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A5BF0A341F1F8F29687F0384272794A4 /* IkatagoSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IkatagoSDK.release.xcconfig; sourceTree = "<group>"; };
 		BC9EA482CF8F276E482B8F755CBE4DFE /* Pods-IkatagoSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IkatagoSDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		D8738CAD5E1BDDADF7F11720E9A73459 /* Pods-IkatagoSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IkatagoSDK_Example-Info.plist"; sourceTree = "<group>"; };
-		EAE6C2D4C655EB37E504E08B877E1FA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D8BC1768CA746CC3081CD30920A02796 /* IkatagoSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IkatagoSDK.debug.xcconfig; sourceTree = "<group>"; };
+		E031DE9635FAE962F1C3676D15C49F2B /* IkatagoSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "IkatagoSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		ED3E6B021518E6EB65B59C259DFBB64B /* IkatagoSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IkatagoSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA717F69F6A71EBEAF1DCFCC06B2AB8E /* Pods-IkatagoSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IkatagoSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		FFAFB4F6B72EC845486B8F276C5C69A3 /* IkatagoSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IkatagoSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CE614E970A5A5BD9233416C117DC42AF /* Frameworks */ = {
+		E99C057465A795DD1CC8BE23B79896D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F2881251EB719C0C9CDC1FE6BC62304 /* Foundation.framework in Frameworks */,
+				02586DEF70380E8B5010B6C02E4796D8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09249A4B4EFA19181D6829A8142F45BF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				ED3E6B021518E6EB65B59C259DFBB64B /* IkatagoSDK.podspec */,
+				200F47F2396B9E88B4B0C5A71384DC4A /* LICENSE */,
+				24D9E879DDBAAC0894CA619F0186A2D6 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		0C63B8C705DE007630DED48CD5EFDA44 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E031DE9635FAE962F1C3676D15C49F2B /* IkatagoSDK-xcframeworks.sh */,
+				D8BC1768CA746CC3081CD30920A02796 /* IkatagoSDK.debug.xcconfig */,
+				A5BF0A341F1F8F29687F0384272794A4 /* IkatagoSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/IkatagoSDK";
+			sourceTree = "<group>";
+		};
 		34FDA604CEBD0D0DAD4FAE26C855A48B /* Pods-IkatagoSDK_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +105,17 @@
 			path = "Target Support Files/Pods-IkatagoSDK_Example";
 			sourceTree = "<group>";
 		};
+		49598539F4A45FAABEC2F678C01AFDEF /* IkatagoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A69E39D5B006D610C847882BAD7ACAB2 /* Frameworks */,
+				09249A4B4EFA19181D6829A8142F45BF /* Pod */,
+				0C63B8C705DE007630DED48CD5EFDA44 /* Support Files */,
+			);
+			name = IkatagoSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		4D9744B49767B093FF60EFD0F34E19B7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,41 +124,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		574F19EE63CBA7E577CABE437D5D9F2A /* Support Files */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				259F89B0B44C81056AD46EF74F162443 /* IkatagoSDK.debug.xcconfig */,
-				13A772E9130B1BF08DE8EFBF70FF4C4D /* IkatagoSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/IkatagoSDK";
-			sourceTree = "<group>";
-		};
-		95A1CC071CE5355B6DFB33891376F75A /* IkatagoSDK */ = {
-			isa = PBXGroup;
-			children = (
-				B85095F8B78E71D60E13E46B8311B54A /* Frameworks */,
-				E05C056A9BCCA2F7233CAFAFB35F0BBE /* Pod */,
-				574F19EE63CBA7E577CABE437D5D9F2A /* Support Files */,
-			);
-			name = IkatagoSDK;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		B85095F8B78E71D60E13E46B8311B54A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				001A883FD3223175D28E88975355E91D /* ikatagosdk.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		A69E39D5B006D610C847882BAD7ACAB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C6DE2513D55B3883BD0F4A92D1A2899 /* ikatagosdk.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -133,53 +146,43 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				E4B09C13E96F595DC592EBD446153810 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E657FC05BEBAB539F3CF746D8D1747F5 /* Products */,
+				D0EF7D685D29269CAD0C3D7C5598B2F2 /* Products */,
 				4D9744B49767B093FF60EFD0F34E19B7 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D0EF7D685D29269CAD0C3D7C5598B2F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				511E23526DDAC07F1B858B984133EBFC /* Pods-IkatagoSDK_Example */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E05C056A9BCCA2F7233CAFAFB35F0BBE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FFAFB4F6B72EC845486B8F276C5C69A3 /* IkatagoSDK.podspec */,
-				EAE6C2D4C655EB37E504E08B877E1FA5 /* LICENSE */,
-				B98AF5C3337404A57CADD4C03386EE64 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		E4B09C13E96F595DC592EBD446153810 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				95A1CC071CE5355B6DFB33891376F75A /* IkatagoSDK */,
+				49598539F4A45FAABEC2F678C01AFDEF /* IkatagoSDK */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E657FC05BEBAB539F3CF746D8D1747F5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				511E23526DDAC07F1B858B984133EBFC /* Pods_IkatagoSDK_Example.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4AC9170B2650536077B64CAF6D19C564 /* Headers */ = {
+		D6D3435AC906300DBB513E554B17FAA2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CFFBB81DC3A07987BF657BEFE01DC05 /* Pods-IkatagoSDK_Example-umbrella.h in Headers */,
+				6FB57DB9E641D49D981BFB8E3C431978 /* Pods-IkatagoSDK_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,21 +191,21 @@
 /* Begin PBXNativeTarget section */
 		1F6E38A50EC75AAF484F55A8766EB343 /* Pods-IkatagoSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60985C3E8AA700648D2325745B1651A7 /* Build configuration list for PBXNativeTarget "Pods-IkatagoSDK_Example" */;
+			buildConfigurationList = 5371DB70B031DC6A0B234ADCADC132EA /* Build configuration list for PBXNativeTarget "Pods-IkatagoSDK_Example" */;
 			buildPhases = (
-				4AC9170B2650536077B64CAF6D19C564 /* Headers */,
-				02C716D05EC9103FD3763133628E4C53 /* Sources */,
-				CE614E970A5A5BD9233416C117DC42AF /* Frameworks */,
-				6A46C4DA4133150A8D2872EA6B37739D /* Resources */,
+				D6D3435AC906300DBB513E554B17FAA2 /* Headers */,
+				7BBAF0B18F111330E50932A2499911C8 /* Sources */,
+				E99C057465A795DD1CC8BE23B79896D7 /* Frameworks */,
+				51931F49DFE27B1DC8C42526862B822F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B6375B85E823ECE8A2BAD0195E989561 /* PBXTargetDependency */,
+				3018CC85A7DB3D78A4886AEC95452A3E /* PBXTargetDependency */,
 			);
 			name = "Pods-IkatagoSDK_Example";
-			productName = "Pods-IkatagoSDK_Example";
-			productReference = 511E23526DDAC07F1B858B984133EBFC /* Pods_IkatagoSDK_Example.framework */;
+			productName = Pods_IkatagoSDK_Example;
+			productReference = 511E23526DDAC07F1B858B984133EBFC /* Pods-IkatagoSDK_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -211,19 +214,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E657FC05BEBAB539F3CF746D8D1747F5 /* Products */;
+			productRefGroup = D0EF7D685D29269CAD0C3D7C5598B2F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -234,7 +237,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6A46C4DA4133150A8D2872EA6B37739D /* Resources */ = {
+		51931F49DFE27B1DC8C42526862B822F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,31 +246,132 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BCBDB5ED2D32237377D5634BCDFEC2AA /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/IkatagoSDK/IkatagoSDK-xcframeworks.sh",
+				"${PODS_ROOT}/../../ikatagosdk.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/IkatagoSDK/ikatagosdk.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/IkatagoSDK/IkatagoSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		02C716D05EC9103FD3763133628E4C53 /* Sources */ = {
+		7BBAF0B18F111330E50932A2499911C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CB7F3AFACA485A72BF10839E75EA2EB /* Pods-IkatagoSDK_Example-dummy.m in Sources */,
+				1ABE6A3DB09E1AFCC5AC8B9CE3B977BA /* Pods-IkatagoSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B6375B85E823ECE8A2BAD0195E989561 /* PBXTargetDependency */ = {
+		3018CC85A7DB3D78A4886AEC95452A3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IkatagoSDK;
 			target = C0AE974BD5AA3A3F970DEAD1B8CCC29C /* IkatagoSDK */;
-			targetProxy = 341EC490E906209CE5C4D775432CFB5E /* PBXContainerItemProxy */;
+			targetProxy = 281074C2D214B48F7E6471C3DC28BE79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+		281A6DB3958822C52F6E9E36F47B70E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B159D7267DCF51D711C70331B0A1707 /* Pods-IkatagoSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IkatagoSDK_Example/Pods-IkatagoSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IkatagoSDK_Example/Pods-IkatagoSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3472C971F2214BFC08E696F8D6D6BBC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795E731CE9D7C3B290FE86A82C42C51A /* Pods-IkatagoSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IkatagoSDK_Example/Pods-IkatagoSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IkatagoSDK_Example/Pods-IkatagoSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		429382DEBC9E02B1C692B28DF1C86D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5BF0A341F1F8F29687F0384272794A4 /* IkatagoSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -290,6 +394,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -324,12 +429,12 @@
 			};
 			name = Release;
 		};
-		5FDC2960372BC35138E266EB4DD2F08E /* Debug */ = {
+		8E31D9C53BADA3E8CB819D1653AEF9A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 259F89B0B44C81056AD46EF74F162443 /* IkatagoSDK.debug.xcconfig */;
+			baseConfigurationReference = D8BC1768CA746CC3081CD30920A02796 /* IkatagoSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
@@ -337,10 +442,11 @@
 			};
 			name = Debug;
 		};
-		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -363,6 +469,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -401,113 +508,32 @@
 			};
 			name = Debug;
 		};
-		81AA216CBD4699E49B201A42B03B1E18 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 795E731CE9D7C3B290FE86A82C42C51A /* Pods-IkatagoSDK_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IkatagoSDK_Example/Pods-IkatagoSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IkatagoSDK_Example/Pods-IkatagoSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E93BCEE22F525B0D93C3323965908767 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B159D7267DCF51D711C70331B0A1707 /* Pods-IkatagoSDK_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IkatagoSDK_Example/Pods-IkatagoSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IkatagoSDK_Example/Pods-IkatagoSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F30C995138C8257A2717A53C6B59466C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13A772E9130B1BF08DE8EFBF70FF4C4D /* IkatagoSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
-				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
+				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60985C3E8AA700648D2325745B1651A7 /* Build configuration list for PBXNativeTarget "Pods-IkatagoSDK_Example" */ = {
+		5371DB70B031DC6A0B234ADCADC132EA /* Build configuration list for PBXNativeTarget "Pods-IkatagoSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81AA216CBD4699E49B201A42B03B1E18 /* Debug */,
-				E93BCEE22F525B0D93C3323965908767 /* Release */,
+				3472C971F2214BFC08E696F8D6D6BBC0 /* Debug */,
+				281A6DB3958822C52F6E9E36F47B70E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E5FEAE07972A1297C2C9525DEE666A8 /* Build configuration list for PBXAggregateTarget "IkatagoSDK" */ = {
+		57C67E1B2DFC5672E529EDC8ADA53F8B /* Build configuration list for PBXAggregateTarget "IkatagoSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5FDC2960372BC35138E266EB4DD2F08E /* Debug */,
-				F30C995138C8257A2717A53C6B59466C /* Release */,
+				8E31D9C53BADA3E8CB819D1653AEF9A3 /* Debug */,
+				429382DEBC9E02B1C692B28DF1C86D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
